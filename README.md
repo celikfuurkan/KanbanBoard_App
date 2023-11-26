@@ -1,6 +1,6 @@
 # kanbanboard
 
-A new Flutter project.
+Kanboard App.
 
 ## Getting Started
 
