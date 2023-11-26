@@ -1,0 +1,9 @@
+	Projenin amacı bir iş yönetim uygulaması yapmak oldu. Bir işi görsel planlama yöntemi diyebiliriz. Uygulamaya kayıt ettiğimiz projeyi "BackLog", "To Do" vb. gibi adımlar ile kolayca takip edebiliyoruz. Projedeki taskların ne durumda olduğunu görebiliyoruz.
+
+	* Projeyi yaparken ilk olarak splash_screen.dart dosyasını tasarlayarak başladım.
+	* home_page.dart dosyasında tüm tasarımı oluşturdum.
+	* Fake API hazırlayarak card nesnelerimin içini doldurdum.
+	* API veri işlemleri için "Riverpod" kullandım. (State Management)
+	* Card üzerindeki bilgileri detaylı olarak görmek için Pop-Up tasarladım.
+	* "flutter_reorderable_list" paketi kullanarak cardlarımın kendi arasındaki geçişini sağladım. (sürükle-bırak)
+	* API ye post yaparak veri kayıt ettim.
