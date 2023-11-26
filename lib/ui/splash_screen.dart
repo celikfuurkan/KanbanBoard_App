@@ -30,13 +30,20 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment:
+            MainAxisAlignment.center, // Dikey yönde ortalamak için
+        crossAxisAlignment:
+            CrossAxisAlignment.stretch, // Genişliği maksimuma getirmek için
         children: [
           _buildTopContainers(), // Üst kısımdaki containerın oluşturulduğu metot
           const SizedBox(height: 7),
           _buildMiddleContainers(), // Orta kısımdaki containerın oluşturulduğu metot
-          const SizedBox(height: 18),
-          _buildCenterContent(), // Ortadaki içeriğin oluşturulduğu metot
-          const SizedBox(height: 18),
+          Expanded(
+            child: Center(
+              child:
+                  _buildCenterContent(), // Ortadaki içeriğin oluşturulduğu metot
+            ),
+          ),
           _buildBottomContainers(), // Alt kısımdaki containerın oluşturulduğu metot
           const SizedBox(height: 7),
           _buildBottomRowContainers(), // Alt satırdaki containerın oluşturulduğu metot
@@ -106,12 +113,15 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget _buildCenterContent() {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center, // Dikeyde merkezlemek için
         children: [
-          SizedBox(
-            width: 150,
-            child: Image.asset(
-              'assets/splash_assets/Group164014.png',
-              color: const Color.fromRGBO(116, 75, 252, 1),
+          Center(
+            child: SizedBox(
+              width: 150,
+              child: Image.asset(
+                'assets/splash_assets/Group164014.png',
+                color: const Color.fromRGBO(116, 75, 252, 1),
+              ),
             ),
           ),
           const SizedBox(height: 10),

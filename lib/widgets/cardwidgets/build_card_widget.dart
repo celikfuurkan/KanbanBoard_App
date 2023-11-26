@@ -26,7 +26,7 @@ class _BuildCardWidgetState extends State<BuildCardWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200.0,
+      height: 210,
       child: Padding(
         padding: const EdgeInsets.only(left: 10),
         child: ReorderableListView(
@@ -44,7 +44,7 @@ class _BuildCardWidgetState extends State<BuildCardWidget> {
               key: ValueKey(card), // Each card must have a unique key
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
-                width: 350,
+                width: MediaQuery.of(context).size.width - 70,
                 child: GestureDetector(
                   onTap: () {
                     showCardDialog(context, card);
