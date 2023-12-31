@@ -119,8 +119,10 @@ class _SplashScreenState extends State<SplashScreen> {
             child: SizedBox(
               width: 150,
               child: Image.asset(
-                'assets/splash_assets/Group164014.png',
+                'assets/splash_assets/Google-Flutter-Icon-PNG.png',
                 color: const Color.fromRGBO(116, 75, 252, 1),
+                width: 100,
+                height: 100,
               ),
             ),
           ),

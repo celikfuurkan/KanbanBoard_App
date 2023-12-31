@@ -12,10 +12,8 @@ class AppbarWidgets extends StatelessWidget implements PreferredSizeWidget {
       leading: Padding(
         padding: const EdgeInsets.only(left: 20),
         child: SizedBox(
-          width: 50,
-          height: 30,
           child: Image.asset(
-            'assets/splash_assets/Group164014.png',
+            'assets/splash_assets/Google-Flutter-Icon-PNG.png',
             color: Colors.white,
           ),
         ),
